@@ -3,6 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Card from 'react-bootstrap/Card';
+import { Link } from 'react-router-dom';
 
 function Landing() {
     return (
@@ -13,7 +14,8 @@ function Landing() {
                         <h2>Welcome to <span className='text-warning'>Media Player</span></h2>
                         <p className='mt-4' style={{ fontSize: '18px', textAlign: 'justify' }}>A media player app document typically outlines the functionalities, features, and development aspects of a software application designed to play audio and video files. It can include information on supported formats, playback controls, UI/UX design, and backend technologies. </p>
 
-                        <button className='btn btn-warning mt-3 text-dark'>Get Started</button>
+                        
+                        <Link to={'/home'}><button className='btn btn-warning mt-3 text-dark' >Get Started</button></Link>
                     </Col>
                     <Col md={6} className='d-flex justify-content-center align-item-center'>
                         <img src="https://i.pinimg.com/originals/41/34/d8/4134d81e03e1341121826158833c73f7.gif" alt="" className='w-75' />
